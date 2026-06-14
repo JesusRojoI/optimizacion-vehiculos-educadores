@@ -36,7 +36,7 @@ class CalculadorRutas:
         except:
             pass
         
-        # Fallback a simulación
+        # Fallback a simulación aa
         distancia_km = np.sqrt((origen_lat - dest_lat)**2 + (origen_lon - dest_lon)**2) * 111
         tiempo_seg = distancia_km * 3600 / 60  # 60 km/h promedio
         self.cache[key] = (distancia_km * 1000, tiempo_seg)

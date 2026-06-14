@@ -125,15 +125,25 @@ def generar_catalogos_auxiliares():
     }
     return catalogos
 
-if __name__ == "__main__":
+def main():
     educadores = generar_educadores()
     hospitales = generar_hospitales(80)
     hospitales_asignados = asignar_hospitales_educadores(educadores, hospitales)
     catalogos = generar_catalogos_auxiliares()
+    
+    # Crear carpetas si no existen
+    import os
+    os.makedirs('data/raw', exist_ok=True)
+    os.makedirs('data/processed', exist_ok=True)
+    os.makedirs('data/resultados', exist_ok=True)
     
     educadores.to_csv('data/raw/educadores.csv', index=False)
     hospitales_asignados.to_csv('data/raw/hospitales.csv', index=False)
     catalogos['prioridad'].to_csv('data/raw/catalogos_auxiliares_prioridad.csv', index=False)
     catalogos['dificultad'].to_csv('data/raw/catalogos_auxiliares_dificultad.csv', index=False)
     
-    print("Datos generados y guardados en data/raw/")
+    print("✅ Datos generados y guardados en data/raw/")
+    return educadores, hospitales_asignados, catalogos
+
+if __name__ == "__main__":
+    main()

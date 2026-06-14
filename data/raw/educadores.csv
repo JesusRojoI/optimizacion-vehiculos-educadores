@@ -1,0 +1,17 @@
+id_educador,nombre,estado_base,ciudad_base,lat_base,lon_base
+1,Educador_1,Ciudad de México,Ciudad de México,19.4326,-99.1332
+2,Educador_2,Guadalajara,Guadalajara,20.6597,-103.3496
+3,Educador_3,Monterrey,Monterrey,25.6866,-100.3161
+4,Educador_4,Puebla,Puebla,19.0414,-98.2063
+5,Educador_5,Querétaro,Querétaro,20.5888,-100.3899
+6,Educador_6,León,León,21.1236,-101.6805
+7,Educador_7,Mérida,Mérida,20.9671,-89.6237
+8,Educador_8,Toluca,Toluca,19.2826,-99.6557
+9,Educador_9,San Luis Potosí,San Luis Potosí,22.1565,-100.9855
+10,Educador_10,Aguascalientes,Aguascalientes,21.8818,-102.2916
+11,Educador_11,Hermosillo,Hermosillo,29.0729,-110.9559
+12,Educador_12,Cancún,Cancún,21.1619,-86.8515
+13,Educador_13,Villahermosa,Villahermosa,17.9892,-92.9475
+14,Educador_14,Chihuahua,Chihuahua,28.6353,-106.0889
+15,Educador_15,Culiacán,Culiacán,24.8091,-107.3941
+16,Educador_16,Morelia,Morelia,19.7058,-101.1839
